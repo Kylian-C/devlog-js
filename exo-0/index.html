@@ -12,54 +12,83 @@
         /* Section 1 */   
 
         var name = "Joe";
+        // Variable Nommée name et qui correspond a Joe 
         var city = 'London';
+        // Variable Nommée city et qui correspond a London
         var age = 32;
+        // Variable Nommée age et qui prend comme valeur 32
         var isRed = true;
+        // Variable Nommée isRed qui renvoie un boolean "true"
         var isOld = age > 80;
+        // Variable Nommée isOld et qui correspond a age plus grand que 80
 
         var previousJobs = ['lawyer', 'developper', 'Professionnal climber'];
+        // Variable Nommée previousJobs qui est egal a entre crochet " lawyer , developper , Professionnal climber ""
 
         function info(height, weight) {
+            // On declare une fonction info et qui prends comme id entre parenthese height et weight 
             if (height > 180) {
+                // On dis que SI height est plus grand que 180 
                 console.log('Vous êtes grand');
+                // Alors dans le console.log il doit y etre " inscrit vous êtes grand "
             }
             if (weight < 0) {
+                // On dis que SI weight est plus petit que 0
                 console.log('oups, there is a problem');
+                // Alors dans le console.log il doit y etre inscrit " oups, there is a problem "
             } else if ( weight < 15) {
+                // Sinon si weight est plus petit que 15
                 console.log('Are you that slim ?')
+                // Alors dans le console.log il doit y etre inscrit "Are you that slim ?'"
             } else {
+                // Sinon
                 console.log('Good !')
+                // Dans le console.log il doit y etre inscrit "Good !"
             }
         }
 
         info(165, 45);
+        // J'appelle la fonction info et on lui dis qu'il prend en parametre il doit prendre 165 et 45
 
         var myHeight = 175;
+        // On declare une variable nommée myHeight est qui prend comme valeur 175
         var myWeight = 86;
+        // On declare une variable nommée myWeight est qui prend comme valeur 86
 
         info(myHeight, myWeight);
+        //j'appelle la fonction info prend comme premiere valeur myHeight et le second myWeight
 
         info(myHeight + 15, myWeight - 100);
+        // j'appelle la fonction fonction info prend comme valeur myHeight + 15 et le second myWeight - 100
 
         function toUpper(variable) {
+            // On declare une fonction nommée toUpper qui prend en parametre "variable"
             return variable.toUpperCase();
+            // On lui dit de retourner la notre parametre "variable" a notre fonction toUpperCase
         }
 
         var upperName = toUpper(name);
+        // On declare une variable nommée upperName et qui est egal a la fonction toUpper et qui prend en parametre "name"
 
         for (i = 0; i < 3; i = i + 1) {
+            // On declare une boucle for qui prend en parametre un index = i et on dis que i = 0 , i inferieur a 3 et que i++
             console.log(previousJobs[i]);
+            // Alors dans la console.log il nous renvoie comme parametre previousJobs et qui prend un tableau notre index
         }
 
         /* Section 2: */
 
-        // afficher la ville dans laquele Joe vit.     
+        // afficher la ville dans laquele Joe vit. 
+        // Joe vit a London   
 
         // afficher si Joe est roux ou pas.
+        // Joe est roux
 
         /* Section 3 */
 
-        // console.log(myVariable);
+        console.log(myVariable);
+        // Quand on recharge la page , rien ne s'affiche . La raison est que quand on va dans inspecter puis dans console , on se rend compte que "myVariable" n'est pas declarer donc rien ne s'affiche .
+
 
         </script>
 
