@@ -1,2 +1,2 @@
 // you can write js here
-console.log('exo-3');
+console.log('exo-2');
